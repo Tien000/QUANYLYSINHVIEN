@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Quản Lý Sinh Viên TNUT"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".InFoAppActivity"
+            android:exported="true" />
+
+        <activity android:name=".loginandregisteractivity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".loginandregisteractivity.RegisterActivity"
+            android:exported="false" />
+        <activity android:name=".ThemLopActivity"
+            android:exported="true" />
+        <activity android:name=".DanhSachLopActivity"
+            android:exported="true" />
+        <activity android:name=".ManagerActivity"
+            android:exported="true" />
+        <activity android:name=".ThemSinhVienActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
